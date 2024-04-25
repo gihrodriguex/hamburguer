@@ -1,15 +1,20 @@
-import {createBrowserRouter, RouterProvider}
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+import Filme1 from "./pages/Filme1";
 
+const router = createBrowserRouter([
+  {
+    path:"/",
+    element: <Filme1 />
+  },
 
-
-
+])
 
 export default function App() {
   return (
-    <div>
-      <main>
-  
-      </main>
-    </div>
+    <RouterProvider router={router}/>
   )
 }
+
+
+
+
